@@ -29,21 +29,8 @@ client.on('message', async message =>
 	const command = args.shift().toLowerCase();
 	if (command === 'ping') {
 		message.channel.send('Pong. hello i am flinty bot sexy sex');
-    } else if (command === 'say') {
-		if (!args.length) {
-			return message.channel.send(`say something smh ${message.author}!`);
-		}
-		if (message.content.includes('@everyone')) {
-			if (!message.member.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt')
-		}
-		else if (message.content.includes('@here')) {
-			if (!message.member.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt')
-		}
-		else {
-			message.channel.send(`${args.join(' ')}`);
-			message.delete(args)
-		}
-};
+    } 
+});
 
 
  
