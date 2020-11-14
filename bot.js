@@ -43,7 +43,7 @@ client.on('message', async message =>
 			message.channel.send(`${args.join(' ')}`);
 			message.delete(args)
 		}
-});
+};
 
 
  
