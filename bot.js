@@ -8,7 +8,15 @@ let statusChoice = ['f! | bojo for the sexy times', 'f! | rape is just a joke go
 client.on('ready', () => {
 
     console.log('I am ready!');
-
+	setInterval(function(){
+		let displayedStatus = statusChoice[Math.floor(Math.random()*statusChoice.length)];
+		client.user.setPresence({
+			status: 'online',
+			activity:{
+				name: displayedStatus
+			}
+		})
+	},20000)
 });
 
  
