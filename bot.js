@@ -1,6 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = ("f!")
+let statusChoice = ['f! | bojo for the sexy times', 'f! | rape is just a joke gone well'];
+
+
 
 client.on('ready', () => {
 
