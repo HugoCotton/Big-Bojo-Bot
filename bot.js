@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
-
 const client = new Discord.Client();
-
- 
+var prefix = ("t!")
 
 client.on('ready', () => {
 
